@@ -1,3 +1,12 @@
+## Project Highlights
+
+- Analyzed 2.2 million crime records
+- Built using Apache Spark and Databricks
+- Applied Spark SQL for large-scale aggregation
+- Identified temporal crime patterns
+- Performed spatial hotspot detection using K-Means clustering
+- Generated actionable insights for public safety planning
+
 # San Francisco Crime Analysis using Spark SQL and K-Means
 
 ## Project Overview
@@ -61,9 +70,9 @@ Property-related crimes account for a significant proportion of all incidents.
 
 # Analysis 2: Crime Distribution by District
 
-The Southern district reports the highest crime volume, followed by Mission and Northern.
+The Southern district reports the highest crime volume, suggesting that public safety resources and patrol planning should prioritize this area.
 
-![District Analysis]<img width="1051" height="500" alt="visualization (5)" src="https://github.com/user-attachments/assets/adfbcf24-3959-45cb-9dd4-80b0c17d80a6" />
+<img width="1051" height="500" alt="visualization (5)" src="https://github.com/user-attachments/assets/adfbcf24-3959-45cb-9dd4-80b0c17d80a6" />
 
 
 ---
@@ -74,7 +83,7 @@ Crime activity tends to increase toward weekends.
 
 Friday records the highest number of incidents.
 
-![Day Of Week]<img width="1051" height="500" alt="visualization (6)" src="https://github.com/user-attachments/assets/378fe7b0-12aa-451f-8cd1-585e0773c2a1" />
+<img width="1051" height="500" alt="visualization (6)" src="https://github.com/user-attachments/assets/378fe7b0-12aa-451f-8cd1-585e0773c2a1" />
 
 
 ---
@@ -85,7 +94,7 @@ Crime volume remains relatively stable between 2003 and 2017.
 
 The decline observed in 2018 is due to incomplete data collection (January–May only).
 
-![Year Trend]<img width="1051" height="500" alt="visualization (1)" src="https://github.com/user-attachments/assets/859fcd3c-27e9-476c-b687-fb57777eeabb" />
+<img width="1051" height="500" alt="visualization (1)" src="https://github.com/user-attachments/assets/859fcd3c-27e9-476c-b687-fb57777eeabb" />
 
 
 ---
@@ -94,23 +103,33 @@ The decline observed in 2018 is due to incomplete data collection (January–May
 
 Crime incidents are lowest during early morning hours.
 
-Activity peaks during the afternoon and evening.
+Crime activity peaks during afternoon and evening hours, indicating periods where increased police presence may improve crime prevention.
 
-![Hour Trend]<img width="1051" height="500" alt="visualization (2)" src="https://github.com/user-attachments/assets/9d07b8fd-4fd1-4fab-9171-f503769a0186" />
+<img width="1051" height="500" alt="visualization (2)" src="https://github.com/user-attachments/assets/9d07b8fd-4fd1-4fab-9171-f503769a0186" />
 
 
 ---
 
 # Analysis 6: Spatial Crime Hotspots (K-Means)
 
-K-Means clustering was applied using longitude and latitude coordinates.
+## Analysis 6: Spatial Crime Hotspots (K-Means)
 
-Five major spatial crime hotspots were identified.
+K-Means clustering was applied to geographic coordinates (longitude and latitude).
 
-![Cluster Count]<img width="1051" height="500" alt="visualization (3)" src="https://github.com/user-attachments/assets/001323f9-46e3-4998-8fbe-b931b2cb928e" />
+Five distinct crime hotspot regions were identified across San Francisco.
 
+The clustering results reveal that crime incidents are not uniformly distributed but are concentrated in specific urban areas.
 
-![KMeans Spatial Clustering]<img width="1051" height="500" alt="visualization (4)" src="https://github.com/user-attachments/assets/c99d53d8-67cb-48ac-a260-fbe267557aa8" />
+These findings can support:
+
+- Resource allocation
+- Patrol route planning
+- Crime prevention strategies
+- Urban safety management
+
+<img width="1051" height="500" alt="visualization (3)" src="https://github.com/user-attachments/assets/001323f9-46e3-4998-8fbe-b931b2cb928e" />
+
+<img width="1051" height="500" alt="visualization (4)" src="https://github.com/user-attachments/assets/c99d53d8-67cb-48ac-a260-fbe267557aa8" />
 
 
 ---
@@ -125,7 +144,19 @@ Five major spatial crime hotspots were identified.
 
 ---
 
-# Repository Structure
-<img width="1051" height="500" alt="visualization" src="https://github.com/user-attachments/assets/6f27f10d-4b8c-414d-a2c2-e4e553059178" />
+## Repository Structure
+
+SF-Crime-Analysis/
+│
+├── README.md
+├── SF_Crime_Analysis.ipynb
+└── images/
+    ├── category_distribution.png
+    ├── district_analysis.png
+    ├── day_of_week.png
+    ├── yearly_trend.png
+    ├── hourly_trend.png
+    ├── cluster_count.png
+    └── spatial_clusters.png
 
 
