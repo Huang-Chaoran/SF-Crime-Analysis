@@ -112,7 +112,6 @@ Crime activity peaks during afternoon and evening hours, indicating periods wher
 
 # Analysis 6: Spatial Crime Hotspots (K-Means)
 
-## Analysis 6: Spatial Crime Hotspots (K-Means)
 
 K-Means clustering was applied to geographic coordinates (longitude and latitude).
 
@@ -146,17 +145,19 @@ These findings can support:
 
 ## Repository Structure
 
+```text
 SF-Crime-Analysis/
 │
 ├── README.md
-├── SF_Crime_Analysis.ipynb
+├── sf_crime_analysis.py
 └── images/
-    ├── category_distribution.png
+    ├── crime_category_distribution.png
     ├── district_analysis.png
-    ├── day_of_week.png
+    ├── day_of_week_distribution.png
     ├── yearly_trend.png
     ├── hourly_trend.png
     ├── cluster_count.png
     └── spatial_clusters.png
+```
 
 
